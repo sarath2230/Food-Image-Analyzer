@@ -1,3 +1,4 @@
+![Screenshot 2024-11-06 115515](https://github.com/user-attachments/assets/0cc8845c-9aee-4f56-a81b-c2aab15f9350)
 # Food-Image-Analyzer
 # 🍽️ Food Image Analyzer
 Food Image Analyzer is an AI-powered application that analyzes food images to identify ingredients, provides step-by-step cooking instructions, and calculates nutritional information. It helps users understand their meals better and assists in preparing dishes with accurate ingredient detection.
@@ -23,3 +24,16 @@ With the rise of food photography and AI advancements, this project aims to simp
 ![Screenshot 2024-11-06 114917](https://github.com/user-attachments/assets/6834a8da-4c5e-4958-8118-bde50d6413a5)
 ![Screenshot 2024-11-06 115025](https://github.com/user-attachments/assets/8340ef40-32a8-434e-809f-8e85ac90b408)
 ![Screenshot 2024-11-06 115501](https://github.com/user-attachments/assets/c97875f0-e818-4370-9b38-31a87381e931)
+
+## 🎯 Features in Detail
+🔹 Ingredient Identification – Uses AI to analyze uploaded food images and detect ingredients
+🔹 Recipe Generation – Provides a complete recipe based on detected ingredients
+🔹 Calorie Estimation – Displays nutritional values of the dish
+🔹 User-Friendly Interface – Web-based UI for ease of use
+🔹 Multi-Language Support – Works in both English and Telugu
+
+## 💡 Future Enhancements
+🔹 Improve AI model accuracy for ingredient recognition
+🔹 Add support for more regional languages
+🔹 Deploy on cloud platforms for wider accessibility
+
