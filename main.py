@@ -26,7 +26,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Configure Google Generative AI
-os.environ["GOOGLE_API_KEY"] = "AIzaSyAV6sfg2mb64Jw3uiDObFaeDkIHbKIaY1w"
+os.environ["GOOGLE_API_KEY"] = "Your api key "
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 # Define input prompts in English and Telugu
