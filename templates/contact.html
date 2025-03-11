@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Food Vision Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contactstyle.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Food Vision Analyser</h1>
+            <nav>
+                <ul class="nav-list">
+                    <a style="text-decoration: none;color: white;" href="http://localhost:5000/"><li>HOME</li></a>
+                    <a style="text-decoration: none;color: white;" href="http://localhost:5000/dish"><li>Image to Ingredients</li></a>
+                    <a style="text-decoration: none;color: white;" href="http://localhost:5000/cusine"><li>Recipe by Name</li></a>
+                    
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Whether you have a question about features, pricing, or anything else, our team is ready to answer all your questions.</p>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h2>Office Location</h2>
+                    <p>Rgukt Ongole , AP</p>
+                </div>
+                <div class="contact-card">
+                    <h2>Email</h2>
+                    <p><a href="mailto:support@foodvisionanalyzer.com">support@foodvision.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <h2>Phone</h2>
+                    <p>1400 1400 143</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <p>Follow Us:</p>
+                <a href="https://www.facebook.com/" class="fa fa-facebook" alt="Facebook"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram" alt="Instagram"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Food Vision Analyzer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

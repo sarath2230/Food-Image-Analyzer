@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles2.css') }}">
+    <title>Dish Information</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Food Vision Analyser</h1>
+            <nav>
+                <ul class="nav-list">
+                    <a style="text-decoration: none;color: white;" href="http://localhost:5000/"><li>HOME</li></a>
+                    <a style="text-decoration: none;color: white;" href="http://localhost:5000/dish"><li>Nutri-check</li></a>
+                    
+                    <a style="text-decoration: none;color: white;" 
+                    href="http://127.0.0.1:5000/contact"><li>contact us</li></a>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>Dish Information</h1>
+    <form method="POST">
+        <label for="language">Select Language:</label>
+        <select name="language" required>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+        </select>
+        <br>
+        <label for="dish_name">Enter Dish Name:</label>
+        <input type="text" name="dish_name" required>
+        <br>
+        <label for="action">Select Action:</label>
+        <select name="action" required>
+            <option value="get_ingredients">Get Ingredients</option>
+            <option value="get_preparation">Get Preparation Steps</option>
+            <option value="get_nutrition">Get Nutritional Values</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    {% if response %}
+        <h2>Response:</h2>
+        <div class="respond">{{ response|safe }}</div>
+    {% endif %}
+</body>
+</html>

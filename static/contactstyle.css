@@ -1,0 +1,173 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+/* header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+} */
+/* /* header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+} 
+header nav a.active {
+    text-decoration: underline;
+} */
+
+/* Contact Section */
+.contact-section {
+    padding: 40px;
+    text-align: center;
+}
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.contact-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 25%;
+}
+.contact-form {
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: left;
+}
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color:white;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(101, 95, 95);
+    color:white;
+}
+.contact-form button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* Social Media */
+.social-media {
+    margin-top: 15px;
+
+}
+.social-media p {
+    font-weight: bold;
+}
+.social-icon {
+    display: inline-block;
+    margin: 0 8px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+header{
+    height: 60px;
+    width:100%;
+    background: #222121;
+    color:#fff;
+    display:flex;
+    align-items:center;
+}
+header{
+    height: 60px;
+    width:100%;
+    background: #222121;
+    color:#fff;
+    display:flex;
+    align-items:center;
+}
+.container{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550;
+
+}
+.logo{
+    font-size: 24px;
+    color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: #cb2027;
+    color: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }

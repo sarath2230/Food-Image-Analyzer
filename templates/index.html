@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Culinary Exploration</title>
+</head>
+<body>
+    <header>
+        <div class="container_1">
+            <h1 class="logo">Food Vision Analyser</h1>
+            <nav>
+                <ul class="nav-list">
+                    <a style="text-decoration: none;color: white;" href="http://localhost:5000/"><li>HOME</li></a>
+                    
+                    <a style="text-decoration: none;color: white;" href="http://localhost:5000/cusine"><li>Recipe by Name</li></a>
+                    <a style="text-decoration: none;color: white;" 
+                    href="http://127.0.0.1:5000/contact"><li>contact us</li></a>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Culinary Exploration</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="language">Select Language:</label>
+            <select name="language" id="language">
+                <option value="English">English</option>
+                <option value="Telugu">Telugu</option>
+            </select>
+            <br>
+            <label for="input_text">Additional Input:</label>
+            <textarea name="input_text" id="input_text" rows="3" placeholder="Any additional instructions or comments..."></textarea>
+            <br>
+
+            <label for="image">Upload Image:</label>
+            <input type="file" name="image" id="image" accept="image/*" required>
+            <br>
+
+            <div class="button-group">
+                <button type="submit" name="action" value="get_dish">Get Dish Name</button>
+                <button type="submit" name="action" value="how_to_cook">How to Cook</button>
+                <button type="submit" name="action" value="nutrition_value">Nutrition Value</button>
+                
+            </div>
+        </form>
+
+        {% if response %}
+            <div class="response">
+                <h2>Response:</h2>
+                <div class="response-image">
+                    <img src="{{ image_url }}" alt="Uploaded Image">
+                </div>
+                <div class="formatted-response">{{ response|safe }}</div>
+            </div>
+        {% endif %}
+    </div>
+    <!-- Loading Animation -->
+    <div id="loading-animation" class="loading-animation" style="display: none;">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <script>
+        // Show loading animation on form submission
+        document.querySelector('form').addEventListener('submit', function() {
+            document.getElementById('loading-animation').style.display = 'block';
+        });
+
+        // Hide loading animation once the response is received
+        window.addEventListener('load', function() {
+            document.getElementById('loading-animation').style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
